@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Token Checker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="asset/css.css">
+</head>
+</head>
+
+<body>
+
+
+
+    <section id="tokens_list" class="input_tokens">
+        <div class="center">
+            <textarea name="tokens" id="tokens" cols="30" rows="10" placeholder="Your Tokens"></textarea>
+            <button onclick="CheckTokens()">Check Tokens</button>
+        </div>
+    </section>
+
+    <section id="results" class="hide">
+        <div class="result-box locked">
+            <div class="box-title">
+                <span>Locked Accounts</span>
+                <hr>
+            </div>
+            <div id="locked_tokens">
+
+            </div>
+        </div>
+        <div class="result-box working">
+            <div class="box-title">
+                <span>Working Accounts</span>
+                <hr>
+            </div>
+            <div id="valid_tokens">
+
+            </div>
+        </div>
+        <div class="working list">
+            <div class="box-title">
+                <span>Working list</span>
+                <hr>
+            </div>
+            <div id="working_tokens_list">
+
+            </div>
+        </div>
+        <div class="result-box bads">
+            <div class="box-title">
+                <span>Invalid Accounts</span>
+                <hr>
+            </div>
+            <div id="invalid_tokens">
+
+            </div>
+        </div>
+    </section>
+
+    <script src="asset/checker.js"></script>
+</body>
+
+</html>
