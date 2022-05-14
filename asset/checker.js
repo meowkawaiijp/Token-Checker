@@ -109,12 +109,10 @@ function CheckTokens() {
                 </div>`
         }
     });
-    document.getElementById("working_tokens_list").innerHTML +=
-        `<div class="account">
-                                   
-                                    <div class="center">
-                                        <p>${token}</p>
-                                    </div>
-                                </div>`
+    for (const t_w of tokne_working) {
+        document.getElementById("working_tokens_list").innerHTML +=
+            `<p>${t_w}</p>`
+    }
+
 
 }
