@@ -105,12 +105,10 @@ function CheckTokens() {
         } else {
             document.getElementById("invalid_tokens").innerHTML +=
                 `<div class="account">
+                   
                     <div class="box">
-                        <img src="./asset/Default.png" alt="User Avatar">
-                    </div>
-                    <div class="box">
-                        <span>????#0000</span>
-                        <p>${token}</p>
+                        <span>No tokens</span>
+                     
                     </div>
                 </div>`
         }

@@ -58,7 +58,7 @@ section.input_tokens .center {
 }
 
 section.input_tokens .center textarea {
-    border: 1px solid #6246ea;
+    border: 1px solid #ea466f;
     outline: none;
     text-decoration: none;
     margin-bottom: 30px;
@@ -74,7 +74,7 @@ section.input_tokens .center textarea {
 }
 
 section.input_tokens .center button {
-    background-color: #6246ea;
+    background-color: #ea46b9;
     border-style: none;
     color: #fffffe;
     padding: 10px 40px;
@@ -85,7 +85,7 @@ section.input_tokens .center button {
 
 section.input_tokens .center button:hover {
     transition: 0.3s all;
-    background-color: #442eb3;
+    background-color: #b32e92;
 }
 
 /* Results */
