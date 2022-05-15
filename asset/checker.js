@@ -33,6 +33,8 @@ function CheckTokens() {
                             username = xhr2.response.split(`, "username": "`)[1].split(`", "avatar":`)[0] + "#" + xhr2.response.split(`, "discriminator": "`)[1].split(`", "public_flags":`)[0]
                             if (xhr2.response.split(`", "avatar": `)[1].split(`, "discriminator`)[0] == "null") {
                                 tokne_working += token;
+                                document.getElementById("working_tokens_list").innerHTML +=
+                                    `<p>${token}</p>`
                                 document.getElementById("valid_tokens").innerHTML +=
                                     `<div class="account">
                                     <div class="box">
@@ -48,6 +50,8 @@ function CheckTokens() {
                                 var scd = xhr2.response.split(`", "avatar": "`)[1].split(`", "discriminator`)[0];
                                 var avatar = `https://cdn.discordapp.com/avatars/${id}/${scd}`;
                                 tokne_working += token;
+                                document.getElementById("working_tokens_list").innerHTML +=
+                                    `<p>${token}</p>`
                                 document.getElementById("valid_tokens").innerHTML +=
                                     `<div class="account">
                                     <div class="box">
@@ -78,6 +82,8 @@ function CheckTokens() {
                                 var scd = xhr2.response.split(`", "avatar": "`)[1].split(`", "discriminator`)[0];
                                 var avatar = `https://cdn.discordapp.com/avatars/${id}/${scd}`;
                                 tokne_working += token;
+                                document.getElementById("working_tokens_list").innerHTML +=
+                                    `<p>${token}</p>`
                                 document.getElementById("valid_tokens").innerHTML +=
                                     `<div class="account">
                                     <div class="box">
@@ -109,10 +115,10 @@ function CheckTokens() {
                 </div>`
         }
     });
-    for (const t_w of tokne_working) {
-        document.getElementById("working_tokens_list").innerHTML +=
-            `<p>${t_w}</p>`
-    }
+    //  for (var t_w of tokne_working) {
+
+
+    //}
 
 
 }
