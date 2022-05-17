@@ -112,7 +112,19 @@ function CheckTokens() {
                     </div>
                 </div>`
         }
+        evt.preventDefault();
+
+
     });
+    const blob = new Blob([tokne_working], { type: 'text/plain' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    document.body.appendChild(a);
+    a.download = 'token_working.txt';
+    a.href = url;
+    a.click();
+    a.remove();
+    URL.revokeObjectURL(url);
     //  for (var t_w of tokne_working) {
 
 
